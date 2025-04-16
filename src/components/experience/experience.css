@@ -1,0 +1,70 @@
+
+
+.technology_cards {
+    
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    
+}
+.technology_card {
+    background: var(--color-white);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    text-align: center;
+    transition: var(--transition);
+    height: 7rem;
+    width: 6.5rem;
+    translate: -50%;
+    margin-left: 50%;
+}
+
+.technology_card:hover {
+    border: 2px solid var(--color-primary);
+    cursor: default;
+    transition: var(--transition);
+    scale: 1.1;
+    -webkit-filter: drop-shadow(10px 15px 7px rgba(209, 224, 230, 0.5));
+    filter: drop-shadow(10px 1px 7px rgba(209, 224, 230, 0.5));
+}
+
+
+
+.technology_card > img{
+    overflow: hidden;
+    transition: var(--transition);
+    height: 80%;
+    width: 80%;
+    translate: -50%;
+    margin-left: 50%;
+    object-fit: contain;
+}
+.technology_card > h5{
+    font-weight: bold;
+    color: var(--color-bg-variant);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .technology_cards {
+        grid-template-columns: repeat(3,1fr);
+        gap: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .technology_cards {
+        grid-template-columns: repeat(3,1fr);
+        gap: 0.5rem;
+    }
+    .technology_card {
+        height: 6.3rem;
+        width: 6.2rem;
+    }
+}
