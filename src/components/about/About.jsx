@@ -1,8 +1,8 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/me-about.png'
-import { BsAward } from "react-icons/bs";
-import { FaUsers } from "react-icons/fa";
+import { GiBrain } from "react-icons/gi";
+import { HiMiniAcademicCap } from "react-icons/hi2";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 
@@ -23,26 +23,32 @@ const About = () => {
         <div className="about_content">
           <div className="about_cards">
           <article className='about_card'>
-              <BsAward className='about_icon'/>
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <GiBrain className='about_icon'/>
+              <h5>Skills</h5>
+              <small>React|Java|MySQL</small>
             </article>
 
             <article className='about_card'>
-              <FaUsers className='about_icon'/>
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <HiMiniAcademicCap className='about_icon'/>
+              <h5>Education</h5>
+              <small>BTech in IT</small>
+              <br></br>
+              <small>TMSL(2022-2026)</small>
             </article>
 
             <article className='about_card'>
               <VscFolderLibrary className='about_icon'/>
               <h5>Projects</h5>
-              <small>10+ completed</small>
+              <small>3+ completed</small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi atque est voluptate velit facere, dicta quod incidunt odio praesentium officiis nam iste fuga consequuntur ullam nisi eligendi labore, saepe ab?
+          I’m a passionate Information Technology student with a strong grasp of programming, 
+          frontend development, and database design. I enjoy solving real-world problems through code,
+           and have hands-on experience with tools like React, Java, Python, MySQL, and more. With a focus on 
+           clean, scalable solutions, I aim to keep growing by exploring new tech and contributing 
+           to innovative projects.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
