@@ -1,12 +1,40 @@
-# React + Vite
+# Subha Deep Mishra — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This site showcases my journey, skills, and projects as a passionate Information Technology student and software developer.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🌟 About This Website
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is my personal portfolio, built to:
+- Present my skills, education, and experience
+- Showcase my best projects with interactive, animated cards
+- Provide an easy way to contact me for collaboration or opportunities
+- Demonstrate my proficiency in modern web technologies and UI/UX
+
+## 🚀 Features
+
+- **Animated UI:** Smooth entrance, hover, and interactive animations using [Framer Motion](https://www.framer.com/motion/)
+- **Responsive Design:** Looks great on all devices
+- **Project Showcase:** Easily add new projects by editing a data array
+- **Contact Form:** EmailJS-powered contact form for direct communication
+- **Sticky Centered Navbar:** Always centered and responsive
+- **Dark Theme:** Stylish, accessible color palette
+
+
+
+
+
+
+
+
+## 📬 Contact
+
+- **Email:** subhadeepmishra100@gmail.com
+- **WhatsApp:** +91 6294222538
+- Or use the contact form on the website!
+
+## 🌐 Live Demo
+
+> https://portfolio-smishra.vercel.app/
+
