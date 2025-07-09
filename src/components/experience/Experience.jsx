@@ -13,71 +13,51 @@ import git from '../../assets/technologies/git.png'
 import github from '../../assets/technologies/github.png'
 import mysql from '../../assets/technologies/mysql.svg'
 import bootstrap from '../../assets/technologies/bootstrap.png'
-
-
+import { motion } from 'framer-motion'
 
 
 const Experience = () => {
   return (
-    <section id='experience'>
-      <h5>The Skills I Have</h5>
-      <h2>Technologies</h2>
-
-      <div className="technology_cards container">
-      <article className="technology_card">
-          <img src={html} alt='HTML5'/>
-          <h5>HTML5</h5>
-        </article>
-        <article className="technology_card">
-          <img src={css} alt='CSS'/>
-          <h5>CSS</h5>
-        </article>
-        <article className="technology_card">
-          <img src={javascript} alt='Javascript'/>
-          <h5>Javascript</h5>
-        </article>
-        <article className="technology_card">
-          <img src={tailwind} alt='Tailwind CSS'/>
-          <h5>Tailwind CSS</h5>
-        </article>
-        <article className="technology_card">
-          <img src={bootstrap} alt='Bootstrap'/>
-          <h5>Bootstrap</h5>
-        </article>
-        <article className="technology_card">
-          <img src={react} alt='React'/>
-          <h5>React</h5>
-        </article>
-        <article className="technology_card">
-          <img src={c} alt='C'/>
-          <h5>C</h5>
-        </article>
-        <article className="technology_card">
-          <img src={cpp} alt='C++'/>
-          <h5>C++</h5>
-        </article>
-        <article className="technology_card">
-          <img src={python} alt='Python'/>
-          <h5>Python</h5>
-        </article>
-        <article className="technology_card">
-          <img src={java} alt='Java'/>
-          <h5>JAVA</h5>
-        </article>
-        <article className="technology_card">
-          <img src={mysql} alt='MySQL'/>
-          <h5>MySQL</h5>
-        </article>
-        <article className="technology_card">
-          <img src={git} alt='Git'/>
-          <h5>Git</h5>
-        </article>
-        <article className="technology_card">
-          <img src={github} alt='Github'/>
-          <h5>Github</h5>
-        </article>
-      </div>
-    </section>
+    <motion.section id='experience'
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+    >
+      <motion.h5
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >The Skills I Have</motion.h5>
+      <motion.h2
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+      >Technologies</motion.h2>
+      <motion.div
+        className="technology_cards container"
+        initial="hidden"
+        whileInView="visible"
+        variants={{
+          hidden: {},
+          visible: { transition: { staggerChildren: 0.08 } }
+        }}
+      >
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={html} alt='HTML5'/><h5>HTML5</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={css} alt='CSS'/><h5>CSS</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={javascript} alt='Javascript'/><h5>Javascript</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={tailwind} alt='Tailwind CSS'/><h5>Tailwind CSS</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={bootstrap} alt='Bootstrap'/><h5>Bootstrap</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={react} alt='React'/><h5>React</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={c} alt='C'/><h5>C</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={cpp} alt='C++'/><h5>C++</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={python} alt='Python'/><h5>Python</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={java} alt='Java'/><h5>JAVA</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={mysql} alt='MySQL'/><h5>MySQL</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={git} alt='Git'/><h5>Git</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={github} alt='Github'/><h5>Github</h5></motion.article>
+      </motion.div>
+    </motion.section>
   )
 }
 

@@ -23,38 +23,52 @@
   }
   .overlay {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 11.5rem;
-    background: linear-gradient(to top right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
+    height: 100%;
+    background: linear-gradient(to top right, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.85));
     opacity: 0;
     transition: opacity 0.4s ease;
-  }
-  .card-content {
-    padding: 0rem 0.5rem ;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    position: absolute;
-    bottom: 0.5rem;
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
+}
+  .card-content {
+    width: 100%;
+    color: #fff;
+    z-index: 3;
     opacity: 0;
     transition: opacity 0.4s ease, transform 0.4s ease;
-  }
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: none;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
   .card-content h2 {
-    margin: 0;
+    margin: 0 0 0.5rem 0;
     font-size: 1.5rem;
-  }
+}
   
   .card-content p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
   }
   .projitems_div-btns {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem 0;
-    width: 50%;
-  }
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+}
 
   /* .visit-btn{
     width: 60%;
@@ -70,8 +84,6 @@
 
   .visit-btn , .github-btn {
     text-align: center;
-    position: relative;
-    left: 25%;
     background-color: var(--color-primary);
     color: var(--color-bg);
     padding: 0.5rem 1rem;
@@ -79,19 +91,28 @@
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
-  }
+    left: 0;
+    position: relative;
+}
   .visit-btn:hover , .github-btn:hover {
     background-color: var(--color-white);
     color: var(--color-bg);
-  }
+}
 
   .project_card:hover .card-content,
 .project_card:hover .overlay {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
   transition: var(--transition);
 }
-
+.card-content,
+.overlay {
+  pointer-events: none;
+}
+.project_card:hover .card-content {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 
 @media screen and (max-width: 1500px) {

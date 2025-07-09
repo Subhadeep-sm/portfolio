@@ -1,19 +1,24 @@
-nav {
+.navbar {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
-    display: block;
+    max-width: 100vw;
+    box-sizing: border-box;
     padding: 0.7rem 1.7rem;
-    z-index: 2;
+    z-index: 10;
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    left: calc(50vw - 10rem);
+    right: auto;
+    /* transform: translateX(-50%); */
     bottom: 2rem;
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
-    backdrop-filter: blur (15px);
+    backdrop-filter: blur(15px);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
-nav > a {
+.navbar > a {
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
@@ -22,10 +27,10 @@ nav > a {
     font-size: 1.1rem;
 }
 
-nav a:hover {
+.navbar a:hover {
     background: ☐ rgba(0, 0, 0, 0.3);
 }
-nav a.active {
+.navbar a.active {
     background: var(--color-bg);
     color: var(--color-white);
 }
