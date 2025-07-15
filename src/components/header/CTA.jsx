@@ -11,7 +11,7 @@ const CTA = () => {
         >
             <motion.a
                 href={CV}
-                download
+                download="Subha_Deep_Mishra_WEBDEVELOPER.pdf"
                 className='btn'
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
