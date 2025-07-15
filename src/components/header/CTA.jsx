@@ -1,5 +1,5 @@
 import React from 'react'
-import Subha_Deep_Mishra_WEBDEVELOPER from '/CV.pdf'
+import Subha_Deep_Mishra_WEBDEVELOPER from '/Subha_Deep_Mishra_WEBDEVELOPER.pdf'
 import { motion } from 'framer-motion'
 
 
