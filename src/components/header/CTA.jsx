@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '/CV.pdf'
+import Subha_Deep_Mishra_WEBDEVELOPER from '/CV.pdf'
 import { motion } from 'framer-motion'
 
 
@@ -12,7 +12,7 @@ const CTA = () => {
             transition={{ delay: 0.5 }}
         >
             <motion.a
-                href={CV}
+                href={Subha_Deep_Mishra_WEBDEVELOPER}
                 download="Subha_Deep_Mishra_WEBDEVELOPER.pdf"
                 className='btn'
                 whileHover={{ scale: 1.08 }}
