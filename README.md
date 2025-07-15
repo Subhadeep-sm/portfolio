@@ -36,5 +36,5 @@ This is my personal portfolio, built to:
 
 ## 🌐 Live Demo
 
-> https://portfolio-smishra.vercel.app/
+> https://portfolio-smishra.vercel.app
 
