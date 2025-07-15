@@ -1,6 +1,8 @@
 import React from 'react'
-import CV from '../../assets/CV.pdf'
+import CV from '/CV.pdf'
 import { motion } from 'framer-motion'
+
+
 const CTA = () => {
     return (
         <motion.div
