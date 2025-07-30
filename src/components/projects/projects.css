@@ -1,173 +1,88 @@
 .projects_cards {
-    width: 100%;
-    place-items: center;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.8rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem 2rem;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  place-items: center;
 }
 
 .project_card {
-    position: relative;
-    width: 25rem;
-    height: 18rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 0.1rem 0.8rem var(--color-light);
-  }
-  
-  .card-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top right, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.85));
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-}
-  .card-content {
-    width: 100%;
-    color: #fff;
-    z-index: 3;
-    opacity: 0;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem 1rem;
-    background: none;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
-}
-  .card-content h2 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.5rem;
-}
-  
-  .card-content p {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-  }
-  .projitems_div-btns {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    width: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0.1rem 0.8rem var(--color-primary-variant);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
 }
 
-  /* .visit-btn{
-    width: 60%;
-    height: 35%;
-  }
-  .github-btn{
-    width: 70%;
-  } */
-  
-  .projitems_div > .visit-btn{
-    top: 40%;
-  }
-
-  .visit-btn , .github-btn {
-    text-align: center;
-    background-color: var(--color-primary);
-    color: var(--color-bg);
-    padding: 0.5rem 1rem;
-    border-radius: 0.2rem;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    left: 0;
-    position: relative;
-}
-  .visit-btn:hover , .github-btn:hover {
-    background-color: var(--color-white);
-    color: var(--color-bg);
+.card-bg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
-  .project_card:hover .card-content,
-.project_card:hover .overlay {
-  opacity: 1;
-  transform: none;
-  transition: var(--transition);
-}
-.card-content,
-.overlay {
-  pointer-events: none;
-}
-.project_card:hover .card-content {
-  opacity: 1;
-  pointer-events: auto;
+.card-content {
+  padding: 1rem;
+  background-color: #212121;
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
 }
 
-
-@media screen and (max-width: 1500px) {
-  .project_card {
-    width: 20rem;
-    height: 15rem;
-  }
-  .overlay{
-    height: 6.8rem;
-  }
-  .card-content h2 {
-    font-size: 1.4rem;
-  }
-  .card-content p {
-    font-size: 0.68rem;
-  }
-  .visit-btn {
-    padding: 0.4rem 0.7rem;
-  }
-  .projects_cards {
-    width: 95%;
-  }
+.card-content h2 {
+  margin: 0;
+  font-size: 1.3rem;
 }
 
+.card-content p {
+  margin: 0;
+  font-size: 0.95rem;
+}
 
+.projitems_div-btns {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.visit-btn,
+.github-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.visit-btn:hover,
+.github-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-bg);
+}
+
+/* Responsive Tweaks */
 @media screen and (max-width: 1100px) {
-    .projects_cards {
-      width: 100%;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1.8rem 1rem;
-    }
-    .project_card {
-      width: 20rem;
-      height: 15rem;
-    }
-    .overlay{
-      height: 6.8rem;
-    }
-    .card-content h2 {
-      font-size: 1.4rem;
-    }
-    .card-content p {
-      font-size: 0.68rem;
-    }
-    .visit-btn {
-      padding: 0.4rem 0.7rem;
-    }
+  .projects_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project_card {
+    width: 90%;
+  }
 }
 
-
-@media screen and (max-width: 860px) {
-    .projects_cards {
-      width: 100%;
-        grid-template-columns: repeat(1,1fr);
-        gap: 2rem 1rem;
-    }
-    
+@media screen and (max-width: 700px) {
+  .projects_cards {
+    grid-template-columns: 1fr;
+  }
 }
