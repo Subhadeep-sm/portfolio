@@ -60,21 +60,21 @@ const About = () => {
             <motion.article className='about_card' variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
               <GiBrain className='about_icon'/>
               <h5>Skills</h5>
-              <small>React|Java|MySQL</small>
+              <small>Java Fullstack</small>
             </motion.article>
 
             <motion.article className='about_card' variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
               <HiMiniAcademicCap className='about_icon'/>
               <h5>Education</h5>
-              <small>BTech in IT</small>
+              <small>BTech (IT)</small>
               <br></br>
-              <small>TMSL(2022-2026)</small>
+              <small>TMSL(2022-26)</small>
             </motion.article>
 
             <motion.article className='about_card' variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
               <VscFolderLibrary className='about_icon'/>
               <h5>Projects</h5>
-              <small>3+ completed</small>
+              <small>5+ completed</small>
             </motion.article>
           </motion.div>
 

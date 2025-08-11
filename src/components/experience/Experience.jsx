@@ -13,6 +13,11 @@ import git from '../../assets/technologies/git.png'
 import github from '../../assets/technologies/github.png'
 import mysql from '../../assets/technologies/mysql.svg'
 import bootstrap from '../../assets/technologies/bootstrap.png'
+import postgres from '../../assets/technologies/postgres.png'
+import spring from '../../assets/technologies/spring.png'
+import hibernate from '../../assets/technologies/hibernate.png'
+import postman from '../../assets/technologies/postman.webp'
+import docker from '../../assets/technologies/docker.webp'
 import { motion } from 'framer-motion'
 
 
@@ -53,9 +58,14 @@ const Experience = () => {
         <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={cpp} alt='C++'/><h5>C++</h5></motion.article>
         <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={python} alt='Python'/><h5>Python</h5></motion.article>
         <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={java} alt='Java'/><h5>JAVA</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={spring} alt='Java'/><h5>Spring</h5></motion.article>
         <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={mysql} alt='MySQL'/><h5>MySQL</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={postgres} alt='MySQL'/><h5>PostgreSQL</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={hibernate} alt='Hibernate'/><h5>Hibernate</h5></motion.article>
         <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={git} alt='Git'/><h5>Git</h5></motion.article>
         <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={github} alt='Github'/><h5>Github</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={postman} alt='Postman'/><h5>Postman</h5></motion.article>
+        <motion.article className="technology_card" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.05 }}><img src={docker} alt='Docker'/><h5>Docker</h5></motion.article>
       </motion.div>
     </motion.section>
   )

@@ -25,7 +25,7 @@ const Nav = () => {
        className={activeNav === '#' ? 'active': ''}
        whileHover={{ scale: 1.2 }}
        whileTap={{ scale: 0.95 }}
-       style={activeNav === '#' ? { borderBottom: '1px solid #e3b04b' } : {}}
+       style={activeNav === '#' ? { borderBottom: '1px solid #00adb5' } : {}}
      ><AiOutlineHome /></motion.a>
      <motion.a
        href="#about"
@@ -33,7 +33,7 @@ const Nav = () => {
        className={activeNav === '#about' ? 'active': ''}
        whileHover={{ scale: 1.2 }}
        whileTap={{ scale: 0.95 }}
-       style={activeNav === '#about' ? { borderBottom: '1px solid #e3b04b' } : {}}
+       style={activeNav === '#about' ? { borderBottom: '1px solid #00adb5' } : {}}
      ><FaRegUser /></motion.a>
      <motion.a
        href="#experience"
@@ -41,7 +41,7 @@ const Nav = () => {
        className={activeNav === '#experience' ? 'active': ''}
        whileHover={{ scale: 1.2 }}
        whileTap={{ scale: 0.95 }}
-       style={activeNav === '#experience' ? { borderBottom: '1px solid #e3b04b' } : {}}
+       style={activeNav === '#experience' ? { borderBottom: '1px solid #00adb5' } : {}}
      ><BiBook /></motion.a>
      <motion.a
        href="#projects"
@@ -49,7 +49,7 @@ const Nav = () => {
        className={activeNav === '#projects' ? 'active': ''}
        whileHover={{ scale: 1.2 }}
        whileTap={{ scale: 0.95 }}
-       style={activeNav === '#projects' ? { borderBottom: '1px solid #e3b04b' } : {}}
+       style={activeNav === '#projects' ? { borderBottom: '1px solid #00adb5' } : {}}
      ><GrProjects  /></motion.a>
      <motion.a
        href="#contact"
@@ -57,7 +57,7 @@ const Nav = () => {
        className={activeNav === '#contact' ? 'active': ''}
        whileHover={{ scale: 1.2 }}
        whileTap={{ scale: 0.95 }}
-       style={activeNav === '#contact' ? { borderBottom: '1px solid #e3b04b' } : {}}
+       style={activeNav === '#contact' ? { borderBottom: '1px solid #00adb5' } : {}}
      ><MdOutlineMessage /></motion.a>
     </motion.nav>
   )
