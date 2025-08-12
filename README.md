@@ -1,4 +1,4 @@
-# Subha Deep Mishra — Portfolio
+# Portfolio
 
 Welcome to my personal portfolio website! This site showcases my journey, skills, and projects as a passionate Information Technology student and software developer.
 
