@@ -79,11 +79,11 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >My Recent Work</motion.h5>
-      <motion.h2
+      <motion.h1
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-      >Projects</motion.h2>
+      >Projects</motion.h1>
 
       <motion.div
         className="container projects_cards"

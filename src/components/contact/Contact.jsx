@@ -43,11 +43,11 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >Get In Touch</motion.h5>
-      <motion.h2
+      <motion.h1
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-      >Contact Me</motion.h2>
+      >Contact Me</motion.h1>
 
       <div className="container contact_container">
         <motion.div
