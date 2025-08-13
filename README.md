@@ -1,4 +1,4 @@
-# Subha Deep Mishra — Portfolio
+# Portfolio
 
 Welcome to my personal portfolio website! This site showcases my journey, skills, and projects as a passionate Information Technology student and software developer.
 
@@ -36,5 +36,5 @@ This is my personal portfolio, built to:
 
 ## 🌐 Live Demo
 
-> https://portfolio-smishra.vercel.app
+> https://smishra.vercel.app
 
